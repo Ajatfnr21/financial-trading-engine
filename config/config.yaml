@@ -1,0 +1,25 @@
+# Financial Trading Engine Configuration
+
+app:
+  name: "Financial Trading Engine"
+  version: "2.0.0"
+  debug: false
+
+features:
+  - 1000 orders/sec
+  - Risk management
+  - Matching
+
+tech_stack:
+  - Asyncio
+  - ZeroMQ
+  - TimescaleDB
+
+server:
+  host: "0.0.0.0"
+  port: 8000
+  workers: 4
+
+logging:
+  level: INFO
+  format: "%(asctime)s | %(levelname)s | %(message)s"
